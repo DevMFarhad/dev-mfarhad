@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mfarhad.vercel.app
+
+# Sitemaps
+Sitemap: https://mfarhad.vercel.app/sitemap.xml

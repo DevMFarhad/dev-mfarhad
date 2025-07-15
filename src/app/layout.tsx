@@ -2,10 +2,14 @@ import type { Metadata } from 'next';
 import { Inter, Lexend, Rubik } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+import { ThemeProvider } from '@/components/providers/ThemeProvider';
+import siteMeta from '@/config/siteMeta';
 
 const rubik = Rubik({
   subsets: ['latin'],
-  variable: '--font-heading',
+  variable: '--font-rubik',
   display: 'swap',
 });
 
@@ -22,10 +26,7 @@ const lexend = Lexend({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: 'Portfolio | Mohammad Farhad',
-  description: 'Mohammad Farhad',
-};
+export const metadata: Metadata = siteMeta;
 
 export default function RootLayout({
   children,
@@ -35,9 +36,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn('min-h-screen antialiased', inter.variable, rubik.variable, lexend.variable)}
+        className={cn(
+          'w-full min-h-screen flex flex-col justify-between items-center antialiased',
+          inter.variable,
+          rubik.variable,
+          lexend.variable,
+        )}
       >
-        {children}
+        <ThemeProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
