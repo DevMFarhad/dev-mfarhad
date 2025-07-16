@@ -7,12 +7,24 @@ const siteMeta: Metadata = {
     default: 'Mohammad Farhad | Full Stack Developer',
     template: '%s | Mohammad Farhad',
   },
+  icons: {
+    icon: '/icon.png',
+  },
   other: {
     'google-site-verification': config.googleSiteKey,
   },
   description:
     'Portfolio of Mohammad Farhad, a full-stack web developer specializing in React, Next.js, TypeScript, and MongoDB.',
-  keywords: ['Mohammad Farhad', 'Web Developer', 'Next.js', 'Portfolio', 'React Developer'],
+  keywords: [
+    'Mohammad Farhad',
+    'mfarhad',
+    'farhad',
+    'developer farhad',
+    'Web Developer',
+    'Next.js',
+    'Portfolio',
+    'React Developer',
+  ],
   authors: [{ name: 'Mohammad Farhad', url: 'https://mfarhad-dev.vercel.app' }],
   creator: 'Mohammad Farhad',
   alternates: {
