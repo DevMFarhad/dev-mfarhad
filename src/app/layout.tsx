@@ -36,18 +36,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          'w-full min-h-screen flex flex-col justify-between items-center antialiased',
-          inter.variable,
-          rubik.variable,
-          lexend.variable,
-        )}
-      >
+      <body className={cn('w-full antialiased', inter.variable, rubik.variable, lexend.variable)}>
         <ThemeProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <div className="w-full min-h-screen flex flex-col justify-between items-center ">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
+
           <Toaster />
         </ThemeProvider>
       </body>

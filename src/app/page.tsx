@@ -1,9 +1,11 @@
 import AboutSection from '@/components/home/AboutSection';
 import ContactSection from '@/components/home/ContactSection';
 import HeroSection from '@/components/home/HeroSection';
+import HireMeSection from '@/components/home/HireMeSection';
 import PortfolioSection from '@/components/home/PortfolioSection';
 import ServicesSection from '@/components/home/ServicesSection';
 import SkillsSection from '@/components/home/SkillSection';
+import TestimonialsSection from '@/components/home/TestimonialsSection';
 
 const Home = () => {
   return (
@@ -13,7 +15,9 @@ const Home = () => {
       <SkillsSection />
       <ServicesSection />
       <PortfolioSection />
+      <TestimonialsSection />
       <ContactSection />
+      <HireMeSection />
     </main>
   );
 };

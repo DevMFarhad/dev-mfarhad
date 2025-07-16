@@ -15,3 +15,5 @@ export const heroDescription =
 
 export const resumeLink =
   'https://drive.google.com/uc?export=download&id=1uABRmjQb7jp1lQaLwYVoQbr66TvWQLC8';
+
+export const linkedinLink = 'https://www.linkedin.com/in/mfarhad-dev';
