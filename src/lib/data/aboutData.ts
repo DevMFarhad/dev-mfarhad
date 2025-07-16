@@ -57,7 +57,7 @@ const aboutData: IProfile = {
       period: '2023',
     },
   ],
-  imageUrl: '/me.png',
+  imageUrl: '/mohammad-farhad.png',
   imageHint: 'developer working computer',
   hobbies: [
     'Exploring new web technologies and frameworks.',

@@ -36,13 +36,13 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row items-center gap-4 mb-10 animate-fade-in"
             style={{ animationDelay: '600ms' }}
           >
-            <Button asChild size="lg" className="group">
+            <Button asChild size="lg" className="group uppercase">
               <Link href={resumeLink} target="_blank">
                 Download CV{' '}
                 <Download className="ml-2 h-5 w-5 group-hover:rotate-90 transition-transform duration-200" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="group">
+            <Button asChild variant="outline" size="lg" className="group uppercase">
               <Link href="#contact">
                 Contact Info{' '}
                 <Send className="ml-2 h-5 w-5 group-hover:rotate-90 transition-transform duration-200" />
