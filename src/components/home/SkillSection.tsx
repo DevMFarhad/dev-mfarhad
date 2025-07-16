@@ -41,7 +41,7 @@ const SkillCard = ({ skill }: { skill: ISkill }) => {
           {items.map((item) => (
             <Badge
               key={item}
-              variant="secondary"
+              variant="outline"
               className="text-sm sm:text-base px-3 py-1 sm:px-4 sm:py-2 rounded-lg transition-transform hover:scale-105"
             >
               {item}

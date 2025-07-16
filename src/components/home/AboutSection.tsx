@@ -8,8 +8,9 @@ const AboutSection = () => {
   return (
     <section id="about" className="bg-muted/50 py-24 md:py-32 border-t">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="relative w-full h-80 md:h-[450px] rounded-lg overflow-hidden shadow-xl animate-fade-in">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-stretch">
+          {/* Image column */}
+          <div className="relative w-full h-80 md:h-auto md:min-h-[450px] rounded-lg overflow-hidden shadow-xl">
             <Image
               src={aboutMe.imageUrl}
               alt="Photo of Mohammad Farhad"
@@ -20,7 +21,9 @@ const AboutSection = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
           </div>
-          <div className="space-y-6 animate-slide-up">
+
+          {/* Text column */}
+          <div className="space-y-6 h-full flex flex-col justify-center">
             <div className="space-y-3">
               <p className="text-sm font-semibold uppercase tracking-wider text-primary">
                 About Me
@@ -35,7 +38,7 @@ const AboutSection = () => {
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
               {aboutMe.mission}
             </p>
-            <Button asChild size="lg" variant="outline" className="uppercase">
+            <Button asChild size="lg" variant="outline" className="uppercase mt-4">
               <Link href="/about">
                 Learn More <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
