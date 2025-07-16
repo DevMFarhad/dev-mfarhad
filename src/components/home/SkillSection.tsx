@@ -12,7 +12,11 @@ const SkillTabList = () => {
     <TabsList className="grid gap-2 w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mb-8 h-auto flex-wrap">
       {skills.map(({ category, icon }) => {
         return (
-          <TabsTrigger key={category} value={category} className="py-2 text-xs sm:text-sm">
+          <TabsTrigger
+            key={category}
+            value={category}
+            className="py-2 text-xs sm:text-sm cursor-pointer"
+          >
             <LucideIcon name={icon} />
             {capitalize(category)}
           </TabsTrigger>

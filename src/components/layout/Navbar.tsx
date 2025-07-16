@@ -20,7 +20,7 @@ const navLinks: INavLink[] = [
 const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300 border-b border-border/60 bg-muted backdrop-blur-sm">
-      <div className="container flex h-16 sm:h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto  flex h-16 sm:h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2">
           <Logo />
         </Link>
