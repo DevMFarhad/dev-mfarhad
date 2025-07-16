@@ -25,13 +25,13 @@ const contactData: ContactData = {
       href: 'tel:01568306714',
     },
     {
-      icon: 'email',
+      icon: 'mail',
       title: 'Email Me',
       value: 'mfarhad.dev@gmail.com',
       href: 'mailto:mfarhad.dev@gmail.com',
     },
     {
-      icon: 'location',
+      icon: 'map-pin',
       title: 'Location',
       value: 'Chattogram, Bangladesh',
       href: '#Chattogram, Bangladesh',

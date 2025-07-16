@@ -38,7 +38,7 @@ const AboutSection = () => {
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
               {aboutMe.mission}
             </p>
-            <Button asChild size="lg" variant="outline" className="uppercase mt-4">
+            <Button asChild size="lg" variant="outline" className="w-fit uppercase mt-4">
               <Link href="/about">
                 Learn More <ArrowRight className="ml-2 h-5 w-5" />
               </Link>

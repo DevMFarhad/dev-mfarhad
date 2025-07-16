@@ -6,6 +6,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import siteMeta from '@/config/siteMeta';
+import { Toaster } from '@/components/ui/sonner';
 
 const rubik = Rubik({
   subsets: ['latin'],
@@ -47,6 +48,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
