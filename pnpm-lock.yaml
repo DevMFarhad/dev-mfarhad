@@ -41,12 +41,18 @@ importers:
       react-dom:
         specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
+      react-type-animation:
+        specifier: ^3.2.0
+        version: 3.2.0(prop-types@15.8.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       tailwind-merge:
         specifier: ^3.3.1
         version: 3.3.1
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@4.1.11)
+      tailwindcss-animation-delay:
+        specifier: ^2.0.2
+        version: 2.0.2(tailwindcss@4.1.11)
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3
@@ -1849,6 +1855,13 @@ packages:
       '@types/react':
         optional: true
 
+  react-type-animation@3.2.0:
+    resolution: {integrity: sha512-WXTe0i3rRNKjmggPvT5ntye1QBt0ATGbijeW6V3cQe2W0jaMABXXlPPEdtofnS9tM7wSRHchEvI9SUw+0kUohw==}
+    peerDependencies:
+      prop-types: ^15.5.4
+      react: '>= 15.0.0'
+      react-dom: '>= 15.0.0'
+
   react@19.1.0:
     resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
     engines: {node: '>=0.10.0'}
@@ -2021,6 +2034,11 @@ packages:
     resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
+
+  tailwindcss-animation-delay@2.0.2:
+    resolution: {integrity: sha512-TwkeymaTqI+woR6SqC1oENdGHP3QHMz0PeLVJXnjc0S2l9JW16liETKgv9MwN83E34TaPm26eOJ0jK7q/AS3tQ==}
+    peerDependencies:
+      tailwindcss: '>=2.0.0 || >=4.0.0'
 
   tailwindcss@4.1.11:
     resolution: {integrity: sha512-2E9TBm6MDD/xKYe+dvJZAmg3yxIEDNRc0jwlNyDg/4Fil2QcSLjFKGVff0lAf1jjeaArlG/M75Ey/EYr/OJtBA==}
@@ -3959,6 +3977,12 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.1.8
 
+  react-type-animation@3.2.0(prop-types@15.8.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      prop-types: 15.8.1
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+
   react@19.1.0: {}
 
   reflect.getprototypeof@1.0.10:
@@ -4196,6 +4220,10 @@ snapshots:
   tailwind-merge@3.3.1: {}
 
   tailwindcss-animate@1.0.7(tailwindcss@4.1.11):
+    dependencies:
+      tailwindcss: 4.1.11
+
+  tailwindcss-animation-delay@2.0.2(tailwindcss@4.1.11):
     dependencies:
       tailwindcss: 4.1.11
 
