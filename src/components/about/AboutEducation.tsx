@@ -5,7 +5,7 @@ import { GraduationCap } from 'lucide-react';
 const AboutEducation = () => {
   const educationHistory = aboutMe.education;
   return (
-    <div className="container mx-auto mb-10">
+    <div className="container mx-auto mb-10 p-5">
       <Card className="border shadow-lg ">
         <CardHeader className="px-6 sm:px-8 md:px-10 pt-10 pb-0">
           <CardTitle className="text-3xl sm:text-4xl font-bold font-headline text-primary flex items-center gap-3">
