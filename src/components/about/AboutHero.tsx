@@ -9,7 +9,7 @@ const AboutHero = () => {
     >
       <div className="container px-4 mx-auto text-center max-w-4xl">
         <div className="flex justify-center mb-4">
-          <Sparkles className="h-8 w-8 text-primary animate-bounce" />
+          <Sparkles className="h-12 w-12 text-primary animate-bounce" />
         </div>
 
         <h1

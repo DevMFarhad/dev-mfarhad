@@ -1,8 +1,10 @@
+import ComingSoon from '@/components/ComingSoon';
+
 const BlogsPages = () => {
   return (
-    <div>
-      <h1>Blogs Page</h1>
-    </div>
+    <main className="w-full">
+      <ComingSoon />
+    </main>
   );
 };
 

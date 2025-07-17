@@ -33,25 +33,15 @@ const PortfolioCard = async ({ item }: Props) => {
         />
       </Link>
 
-      <Link href={`/portfolio/${item.slug}`} className="block px-5 pt-4">
+      <Link href={`/portfolio/${item.slug}`} className="block px-5 pt-4 m-0">
         <CardContent className="space-y-3 px-0 pb-0">
           <Badge variant="outline" className="text-xs w-fit">
             {item.category}
           </Badge>
-
           <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
             {item.title}
           </h3>
-
           <p className="text-sm text-muted-foreground line-clamp-3">{item.description}</p>
-
-          <div className="flex flex-wrap gap-2 mt-2">
-            {item.technologies.map((tech) => (
-              <Badge key={tech} variant="secondary" className="text-[10px] px-2 py-0.5">
-                {tech}
-              </Badge>
-            ))}
-          </div>
         </CardContent>
       </Link>
 

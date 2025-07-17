@@ -7,7 +7,7 @@ const PortfolioHero = () => {
     <section className="w-full border-b bg-muted/50 py-24 md:py-32">
       <div className="container mx-auto max-w-6xl px-4 text-center">
         <div className="flex justify-center mb-4">
-          <Sparkles className="h-8 w-8 text-primary animate-bounce" />
+          <Sparkles className="h-12 w-12 text-primary animate-bounce" />
         </div>
         <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
           Showcasing My <span className="text-primary">Passion Projects</span>

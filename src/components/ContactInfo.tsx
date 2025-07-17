@@ -1,5 +1,4 @@
 import { contactInfo } from '@/lib/data';
-import { Mail, MapPin, Phone } from 'lucide-react';
 import LucideIcon from './shared/LucideIcon';
 import Link from 'next/link';
 

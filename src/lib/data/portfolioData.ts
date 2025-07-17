@@ -22,9 +22,9 @@ export const portfolioData: IPortfolioItem[] = [
       'Programmer Fashion is a full-featured e-commerce platform built from the ground up. It includes a complete customer-facing storefront where users can browse products, add items to their cart, and complete purchases through a secure payment gateway. The backend features robust user authentication powered by Firebase, allowing for customer registration, login, and profile management. A comprehensive admin dashboard provides tools for managing products, viewing customer data, and tracking orders, making it a complete solution for online retail.',
     imageUrl: 'https://placehold.co/600x400.png',
     liveLink: 'https://programmer-fashion.netlify.app',
-    documentationLink: null,
+    documentationLink: 'null',
     githubClientLink: 'https://github.com/mfarhadattari/programmer-fashion-client',
-    githubServerLink: null,
+    githubServerLink: 'null',
     category: 'E-commerce',
     technologies: [
       'React',
