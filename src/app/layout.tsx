@@ -2,11 +2,9 @@ import type { Metadata } from 'next';
 import { Inter, Lexend, Rubik } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
-import siteMeta from '@/config/siteMeta';
 import { Toaster } from '@/components/ui/sonner';
+import siteMeta from '@/config/siteMeta';
 
 const rubik = Rubik({
   subsets: ['latin'],
@@ -38,12 +36,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={cn('w-full antialiased', inter.variable, rubik.variable, lexend.variable)}>
         <ThemeProvider>
-          <div className="w-full min-h-screen flex flex-col justify-between items-center ">
-            <Navbar />
-            {children}
-            <Footer />
-          </div>
-
+          {children}
           <Toaster />
         </ThemeProvider>
       </body>
